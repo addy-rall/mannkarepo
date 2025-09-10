@@ -75,6 +75,19 @@ nav a {
   font-size: 1rem;
   width : 6px;
 }
+.yellow-text {
+  color: #FFD700; 
+}
+
+.highlight {
+  color: #FF6B35; 
+}
+
+}
+
+.highlight {
+  color: #FF5722; 
+}
 
 .book-btn {
   background: #FF9800;
