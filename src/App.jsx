@@ -2,8 +2,11 @@ import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Searchbar from "./components/Searchbar";
 import Herobuttons from "./components/Herobuttons";
-
+import Features from "./components/Featuressection";
+import Temple from "./components/templecard";
+import Testimonial from "./components/testimonial";
 import "./App.css";
+import "./temple.css";
 
 function App() {
   return (
@@ -18,13 +21,19 @@ function App() {
         </p>
         <Searchbar />
         <Herobuttons />
-        
+      
+                 
       </section>
+     <Temple/>
+     <Features/>
+     <Testimonial/> 
      <Footer/>
     </div>
   );
 }
 
 export default App;
+
+
 
 
