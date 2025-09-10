@@ -14,15 +14,13 @@ function App() {
       <Header />
       <section className="hero-section">
         <h1>
-          Discover Sacred <span className="highlight">Temples</span>
+          <span className="yellow-text">Discover Sacred</span> <span className="highlight">Temples</span>
         </h1>
         <p>
           Explore ancient wisdom and spiritual beauty across the world's most magnificent temples
         </p>
         <Searchbar />
         <Herobuttons />
-      
-                 
       </section>
      <Temple/>
      <Features/>
@@ -33,7 +31,3 @@ function App() {
 }
 
 export default App;
-
-
-
-
