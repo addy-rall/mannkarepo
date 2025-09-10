@@ -11,8 +11,7 @@ const TestimonialsSection = () => {
       <div className="testimonials-container">
         <div className="testimonial-card">
           <p>
-            "Great service and support! They really helped us scale our
-            business."
+            "Great service and support! They really helped us attain a serene experience."
           </p>       
           <div className="testimonial-author">
             <img src={author1} alt="Author 1" />
