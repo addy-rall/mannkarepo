@@ -9,7 +9,7 @@ function Footer() {
         <div className="footer-section company-info">
             <img src={logo} alt="Logo" className="footer-logo-img" />
           <span className="footer-logo"> Mannka</span>
-          <p className="footer-tagline" lang="hi">      मन से मंदिर</p>
+         
           <p>Connecting souls with sacred spaces worldwide. Discover the beauty, history, and spirituality of temples across cultures and traditions.</p>
           <div className="social-icons">
             <a href="#"><i className="fab fa-facebook-f"></i></a>
