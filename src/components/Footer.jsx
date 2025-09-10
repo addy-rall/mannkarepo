@@ -16,10 +16,10 @@ function Footer() {
             <a href="#"><i className="fab fa-instagram"></i></a>
             <a href="#"><i className="fab fa-youtube"></i></a>
           </div>
-        </div>
+        </div>  
         <div className="footer-section footer-links">
           <h4>Explore</h4>
-          <ul>
+          <ul>     
             <li><a href="#">All Temples</a></li>
             <li><a href="#">Hindu Temples</a></li>
             <li><a href="#">Buddhist Temples</a></li>
