@@ -15,17 +15,10 @@ function Searchbar() {
       }}
     >
       <input type="text" placeholder="Search temples by name, location, or deity" />
-      <select>
-        <option>All Locations</option>
-        {/* Add more location options here if needed */}
-      </select>
-      <select>
-        <option>All Types</option>
-        {/* Add more type options here if needed */}
-      </select>
+      
       <button type="submit" className="search-btn">Search</button>
     </form>
   );
 }
-
+    
 export default Searchbar;
