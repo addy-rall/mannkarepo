@@ -303,7 +303,13 @@ nav a {
 .footer-legal .legal-links a:hover {
   text-decoration: underline;
 }
-
+.footer-tagline {
+  font-size: 0.9rem;
+  color: #888; /* Slightly muted color for the tagline */
+  font-family: 'Noto Sans Devanagari', Arial, sans-serif;
+  line-height: 1.2;
+  margin-top: 2px;
+}
 /* Header Section Styles */
 .header-section {
     background: white;
