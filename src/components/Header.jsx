@@ -8,7 +8,7 @@ function Header() {
         <img src={logo} alt="Temple Explorer Logo" />
         <div className="logo-text">
           <h1>Mannka</h1>
-          <p>Mann se mandir</p>
+          <p>मन से मंदिर</p>
         </div>
       </div>
       <nav>
