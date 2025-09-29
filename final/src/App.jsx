@@ -1,32 +1,23 @@
-import Footer from "./components/Footer";
-import Header from "./components/Header";
-import Searchbar from "./components/Searchbar";
-import Herobuttons from "./components/Herobuttons";
-import Features from "./components/Featuressection";
-import Temple from "./components/templecard";
-import Testimonial from "./components/testimonial";
 import "./App.css";
-import "./temple.css";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
+// Import your pages/components
+import Home from "./pages/Home";
+
+import NotFound from "./pages/NotFound";
 
 function App() {
   return (
-    <div className="main-layout">
-      <Header />
-      <section className="hero-section">
-        <h1>
-          <span className="yellow-text">Discover Sacred</span> <span className="highlight">Temples</span>
-        </h1>
-        <p>
-          Explore ancient wisdom and spiritual beauty across the world's most magnificent temples
-        </p>
-        <Searchbar />
-        <Herobuttons />
-      </section>
-     <Temple/>
-     <Features/>
-     <Testimonial/> 
-     <Footer/>
-    </div>
+    <Router>
+      <Routes>
+        {/* Main Routes */}
+        <Route path="/" element={<Home />} />
+
+        
+        {/* 404 Not Found Route */}
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+    </Router>
   );
 }
 
