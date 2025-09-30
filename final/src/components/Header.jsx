@@ -372,7 +372,7 @@ export default function Header() {
       </header>
 
       {showLogin && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 backdrop-blur-md flex items-center justify-center z-50 p-4">
+        <div className="fixed inset-0  bg-opacity-50 backdrop-blur-md flex items-center justify-center z-50 p-4">
           <div className="bg-white rounded-2xl shadow-2xl w-full max-w-md transform transition-all duration-500 scale-100 backdrop-blur-sm bg-opacity-95 border border-orange-100">
             <div className="flex justify-between items-center p-6 border-b border-gray-100 bg-gradient-to-r from-orange-50 to-red-50">
               <h2 className="text-2xl font-bold text-gray-800">{isSignUp ? (currentStep === 'details' ? 'Create Account' : currentStep === 'phone-otp' ? 'Phone Verification' : currentStep === 'email-otp' ? 'Email Verification' : 'Success!') : 'Welcome Back'}</h2>

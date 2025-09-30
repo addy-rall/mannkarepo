@@ -99,7 +99,7 @@ const Temples = () => {
 
       {/* Modal */}
       {showModal && selectedTemple && (
-        <div className="fixed inset-0 bg-black bg-opacity-40 flex justify-center items-center z-50">
+        <div className="fixed inset-0 bg-white/30 backdrop-blur-md bg-opacity-40 flex justify-center items-center z-50">
           <div className="bg-white w-full max-w-lg rounded-lg shadow-lg p-6 relative">
             <button onClick={closeModal} className="absolute top-3 right-3 text-gray-500 hover:text-black">✖</button>
             <h2 className="text-2xl font-bold text-orange-600 mb-2">Book Darshan</h2>
