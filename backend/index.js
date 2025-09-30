@@ -10,6 +10,8 @@ const express = require('express');
 const cors = require('cors');
 require('dotenv').config();
 const connectDB = require('./config/db');
+const contactRoutes = require('./routes/contactRoutes');  // <-- Add this
+
 const authRoutes = require('./routes/authRoutes');
 
 // --- 2. Initialization ---
@@ -26,6 +28,9 @@ app.use(express.json()); // To parse JSON bodies from requests
 // --- 5. API Routes ---
 // All routes related to authentication will be prefixed with /api/auth
 app.use('/api/auth', authRoutes);
+// Use the contact routes for API endpoints
+app.use('/api/contact', contactRoutes);
+
 
 // --- 6. Start the Server ---
 app.listen(PORT, () => {
