@@ -2,7 +2,7 @@
 // import logo from "../assets/logo (1).svg"; // Temporarily commented out to resolve compilation error
 import React, { useState, useEffect } from 'react';
 import { X, Eye, EyeOff, User, Lock, Mail, Phone, MapPin, Calendar, CheckCircle } from 'lucide-react';
-
+import { Link } from 'react-router-dom';
 export default function Header() {
   const [showLogin, setShowLogin] = useState(false);
   const [showPassword, setShowPassword] = useState(false);
@@ -338,12 +338,26 @@ export default function Header() {
                 <p>मन से मंदिर</p>
               </div>
             </div>
-            <nav>
+            {/* <nav>
               <a href="#">Home</a>
               <a href="#">Temples</a>
               <a href="#">About Us</a>
               <a href="#">Contact</a>
-            </nav>
+            </nav> */}
+             <div className="flex space-x-8">
+            <Link to="/" className="text-yellow-500 hover:text-orange-200 transition duration-300 font-medium">
+              Home
+            </Link>
+            <Link to="/temples" className="text-yellow-500 hover:text-orange-200 transition duration-300 font-medium">
+              Temples
+            </Link>
+            <Link to="/about" className="text-yellow-500 hover:text-orange-200 transition duration-300 font-medium">
+              About Us
+            </Link>
+            <Link to="/contact" className="text-yellow-500 hover:text-orange-200 transition duration-300 font-medium">
+              Contact
+            </Link>
+          </div>
             {loggedIn ? (
               <button onClick={handleLogout} className="book-btn text-white px-6 py-2 rounded-lg font-semibold hover:from-orange-600 hover:to-red-600 transition-all duration-300 transform hover:scale-105 shadow-lg">
                 Logout
