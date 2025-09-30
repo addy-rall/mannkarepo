@@ -1,6 +1,6 @@
 import React from 'react'
 import "../temple.css";
-import Footer from "../components/Footer";
+// import Footer from "../components/Footer";
 // import Header from "../components/Header";
 import Searchbar from "../components/Searchbar";
 import Herobuttons from "../components/Herobuttons";
@@ -24,7 +24,7 @@ const Home = () => {
      <Temple/>
      <Features/>
      <Testimonial/> 
-     <Footer/>
+     {/* <Footer/> */}
     </div>
   )
 }
