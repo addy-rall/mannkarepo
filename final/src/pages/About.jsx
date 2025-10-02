@@ -17,11 +17,11 @@ export default function About() {
   ];
 
   const teamMembers = [
-    { name: 'Harshika Singh', designation: 'Co-Founder & CTO', description: 'Combines her technical expertise with expceptional communication skills, ensuring that Mannka platform is not only top-notch but also user-friendly.', image: harshikaImg, instagram: 'https://www.instagram.com/harshika4662/', linkedin: 'https://www.linkedin.com/in/harshika9415' },
-    { name: 'Addya Mishra', designation: 'Frontend Developer', description: 'She creates beautiful online experience,making our website looks great and work seamlessly.', image:addyaImg, instagram: '#', linkedin: 'https://www.linkedin.com/in/addyam777' },
+    { name: 'Harshika Singh', designation: 'Co-Founder & CTO', description: 'Combines her technical expertise with expceptional communication skills, ensuring that Mannka platform is not only top-notch but also user-friendly.', image: harshikaImg, instagram: 'https://www.instagram.com/harshika4662/', linkedin: 'https://www.linkedin.com/in/harshika9415/' },
+    { name: 'Addya Mishra', designation: 'Frontend Developer', description: 'She creates beautiful online experience,making our website looks great and work seamlessly.', image:addyaImg, instagram: '#', linkedin: 'https://www.linkedin.com/in/addyam777/' },
     { name: 'Janhvi Singh', designation: 'Creative Design Head', description: 'She paints our Mannka Story with Creativity & Crafting designs.', image:janhviImg , instagram: '#', linkedin: '#' },
-    { name: 'Jay Kishan Dhurwe', designation: 'Backend Developer', description: 'He is our tech wizard , quietly working behind the scenes to ensure everything runs perfectly.', image: jayImg, instagram: '#', linkedin: '#' },
-    { name: 'Parikrama Borah', designation: 'Content Writer', description: 'Se is the storyteller that help people feel connected every spiritual journey that we offer.',image: parikramaImg, instagram: 'https://www.instagram.com/pari_krama_', linkedin: 'https://www.linkedin.com/in/parikrama-borah-068166357' }
+    { name: 'Jay Kishan Dhurwe', designation: 'Backend Developer', description: 'He is our tech wizard , quietly working behind the scenes to ensure everything runs perfectly.', image: jayImg, instagram: 'https://www.instagram.com/jay_kishan_010/', linkedin: 'https://www.linkedin.com/in/jay-kishan/' },
+    { name: 'Parikrama Borah', designation: 'Content Writer', description: 'Se is the storyteller that help people feel connected every spiritual journey that we offer.',image: parikramaImg, instagram: 'https://www.instagram.com/pari_krama_/', linkedin: 'https://www.linkedin.com/in/parikrama-borah-068166357/' }
   ];
 
   const stats = [
