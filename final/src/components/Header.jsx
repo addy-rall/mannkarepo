@@ -51,7 +51,7 @@ export default function Header() {
     return () => clearInterval(interval);
   }, [phoneOtpTimer]);
 
-  useEffect(() => {
+  /*useEffect(() => {
     let interval = null;
     if (emailOtpTimer > 0) {
       interval = setInterval(() => {
@@ -59,7 +59,7 @@ export default function Header() {
       }, 1000);
     }
     return () => clearInterval(interval);
-  }, [emailOtpTimer]);
+  }, [emailOtpTimer]);*/
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
