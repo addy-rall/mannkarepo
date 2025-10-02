@@ -1,5 +1,6 @@
-// import "../App.css"; // Temporarily commented out to resolve compilation error
-// import logo from "../assets/logo (1).svg"; // Temporarily commented out to resolve compilation error
+ // Temporarily commented out to resolve compilation error
+import logo from "../assets/logo (1).svg"; 
+import '../another.css';// Temporarily commented out to resolve compilation error
 import React, { useState, useEffect } from 'react';
 import { X, Eye, EyeOff, User, Lock, Mail, Phone, MapPin, Calendar, CheckCircle } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -326,49 +327,41 @@ export default function Header() {
     }
   };
 
-  return (
-    <div className=" bg-gray-50">
-      <header className="header bg-white shadow-md border-b border-orange-100">
+   return (
+    <div className="header">
+      <header className="header-inner">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-16">
-            <div className="logo-container">
-              {/* <img src={logo} alt="Temple Explorer Logo" /> */} {/* Temporarily commented out to resolve compilation error */}
-              <div className="logo-text">
-                <h1>Mannka</h1>
-                <p>मन से मंदिर</p>
+          <div className="logo-block flex items-center h-16 justify-between">
+            {/* Left: Logo and Name */}
+            <div className="logo-block-horizontal">
+              <img src={logo} alt="Temple Explorer Logo" className="logo-img-horizontal" />
+              <div className="logo-text-horizontal">
+                <h1 className="logo-heading">Mannka</h1>
+                <p className="logo-subtext">मन से मंदिर</p>
               </div>
             </div>
-            {/* <nav>
-              <a href="#">Home</a>
-              <a href="#">Temples</a>
-              <a href="#">About Us</a>
-              <a href="#">Contact</a>
-            </nav> */}
-             <div className="flex space-x-8">
-            <Link to="/" className="text-yellow-500 hover:text-orange-200 transition duration-300 font-medium">
-              Home
-            </Link>
-            <Link to="/temples" className="text-yellow-500 hover:text-orange-200 transition duration-300 font-medium">
-              Temples
-            </Link>
-            <Link to="/about" className="text-yellow-500 hover:text-orange-200 transition duration-300 font-medium">
-              About Us
-            </Link>
-            <Link to="/contact" className="text-yellow-500 hover:text-orange-200 transition duration-300 font-medium">
-              Contact
-            </Link>
+            <nav className="nav-center">
+          <div className="nav-links">
+            <Link to="/" className="nav-link">Home</Link>
+            <Link to="/temples" className="nav-link">Temples</Link>
+            <Link to="/about" className="nav-link">About Us</Link>
+            <Link to="/contact" className="nav-link">Contact</Link>
           </div>
+        </nav>
+            {/* Center: Navigation */}
+          <div className="auth-btn-block"> 
             {loggedIn ? (
-              <button onClick={handleLogout} className="book-btn text-white px-6 py-2 rounded-lg font-semibold hover:from-orange-600 hover:to-red-600 transition-all duration-300 transform hover:scale-105 shadow-lg">
+              <button onClick={handleLogout} className="book-btn">
                 Logout
               </button>
             ) : (
-              <button onClick={() => setShowLogin(true)} className="book-btn text-white px-6 py-2 rounded-lg font-semibold hover:from-orange-600 hover:to-red-600 transition-all duration-300 transform hover:scale-105 shadow-lg">
+              <button onClick={() => setShowLogin(true)} className="book-btn">
                 Login
               </button>
             )}
           </div>
         </div>
+      </div>
       </header>
 
       {showLogin && (
@@ -412,7 +405,7 @@ export default function Header() {
         </div>
       )}
 
-      <div className="fixed bottom-4 right-4 bg-blue-100 border border-blue-200 rounded-lg p-4 max-w-sm shadow-lg">
+      <div className="fixed1 bottom-4 right-4 bg-blue-100 border border-blue-200 rounded-lg p-4 max-w-sm shadow-lg">
         <h4 className="font-semibold text-blue-800 mb-2">Demo Instructions</h4>
         <ul className="text-sm text-blue-700 space-y-1">
           <li>• Click "Login" to open the modal.</li>
