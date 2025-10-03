@@ -1,5 +1,11 @@
+<<<<<<< HEAD
 // import "../App.css"; // Temporarily commented out to resolve compilation error
 import logo from "../assets/logo (1).svg"; // Temporarily commented out to resolve compilation error
+=======
+ // Temporarily commented out to resolve compilation error
+import logo from "../assets/logo (1).svg"; 
+import '../another.css';// Temporarily commented out to resolve compilation error
+>>>>>>> 37a529e7ce4f16f82b33f8182e3e677fff41ebea
 import React, { useState, useEffect } from 'react';
 import { X, Eye, EyeOff, User, Lock, Mail, Phone, MapPin, Calendar, CheckCircle } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -51,7 +57,7 @@ export default function Header() {
     return () => clearInterval(interval);
   }, [phoneOtpTimer]);
 
-  useEffect(() => {
+  /*useEffect(() => {
     let interval = null;
     if (emailOtpTimer > 0) {
       interval = setInterval(() => {
@@ -59,7 +65,7 @@ export default function Header() {
       }, 1000);
     }
     return () => clearInterval(interval);
-  }, [emailOtpTimer]);
+  }, [emailOtpTimer]);*/
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -326,6 +332,7 @@ export default function Header() {
     }
   };
 
+<<<<<<< HEAD
   return (
     <div className=" bg-gray-50">
       <header className=" bg-white shadow-md border-b border-orange-100">
@@ -356,18 +363,43 @@ export default function Header() {
             <Link to="/contact" className="text-yellow-500 hover:text-orange-200 transition duration-300 font-medium">
               Contact
             </Link>
+=======
+   return (
+    <div className="header">
+      <header className="header-inner">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="logo-block flex items-center h-16 justify-between">
+            {/* Left: Logo and Name */}
+            <div className="logo-block-horizontal">
+              <img src={logo} alt="Temple Explorer Logo" className="logo-img-horizontal" />
+              <div className="logo-text-horizontal">
+                <h1 className="logo-heading">Mannka</h1>
+                <p className="logo-subtext">मन से मंदिर</p>
+              </div>
+            </div>
+            <nav className="nav-center">
+          <div className="nav-links">
+            <Link to="/" className="nav-link">Home</Link>
+            <Link to="/temples" className="nav-link">Temples</Link>
+            <Link to="/about" className="nav-link">About Us</Link>
+            <Link to="/contact" className="nav-link">Contact</Link>
+>>>>>>> 37a529e7ce4f16f82b33f8182e3e677fff41ebea
           </div>
+        </nav>
+            {/* Center: Navigation */}
+          <div className="auth-btn-block"> 
             {loggedIn ? (
-              <button onClick={handleLogout} className="book-btn text-white px-6 py-2 rounded-lg font-semibold hover:from-orange-600 hover:to-red-600 transition-all duration-300 transform hover:scale-105 shadow-lg">
+              <button onClick={handleLogout} className="book-btn">
                 Logout
               </button>
             ) : (
-              <button onClick={() => setShowLogin(true)} className="book-btn text-white px-6 py-2 rounded-lg font-semibold hover:from-orange-600 hover:to-red-600 transition-all duration-300 transform hover:scale-105 shadow-lg">
+              <button onClick={() => setShowLogin(true)} className="book-btn">
                 Login
               </button>
             )}
           </div>
         </div>
+      </div>
       </header>
 
       {showLogin && (
@@ -411,7 +443,19 @@ export default function Header() {
         </div>
       )}
 
+<<<<<<< HEAD
       
+=======
+      <div className="fixed1 bottom-4 right-4 bg-blue-100 border border-blue-200 rounded-lg p-4 max-w-sm shadow-lg">
+        <h4 className="font-semibold text-blue-800 mb-2">Demo Instructions</h4>
+        <ul className="text-sm text-blue-700 space-y-1">
+          <li>• Click "Login" to open the modal.</li>
+          <li>• Switch to "Sign Up" to test registration.</li>
+          <li>• Backend is now connected. Check server console for OTPs.</li>
+          <li>• All form validations are working.</li>
+        </ul>
+      </div>
+>>>>>>> 37a529e7ce4f16f82b33f8182e3e677fff41ebea
     </div>
   );
 }
